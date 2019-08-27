@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends "bootstrap/base.html" %}
+
+{% block title %}
+YOUR WEB PAGE TITLE GOES HERE
+
+{% endblock %}
+
+
+
+{% block content %}
+
+
+
+    <div class="jumbotron">
+<h1>My Notes</h1>
+
+        </div>
+
+    <form method="POST" action="/">
+
+    <div class=input-group>
+    <input type="text"  name="new-note" required class = form-control>
+    <div class=input-group-btn>
+    <input type="submit" class="btn btn-success" value="Save" >
+    </div>
+    </div>
+
+</form>
+<div>
+
+{% for note in savedNotes %}
+    <p> {{ note['new-note'] }}  </p>
+
+    {% endfor %}
+
+</div>
+
+<p> a good note!</p>
+<p></p>
+
+<p>
+another good note!</p>
+
+
+{% endblock %}
+
+
+</html>

@@ -1,0 +1,20 @@
+
+
+#message {
+    color: green;
+
+
+}
+
+#myHeader {
+    background-color: lightblue;
+    color : black;
+    text-align: center;
+
+    padding: 40px;
+}
+
+
+p.message {
+    color: blue;
+}
